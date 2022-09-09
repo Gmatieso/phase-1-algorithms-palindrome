@@ -1,25 +1,15 @@
 function reverse(word){
-// 'abc' => 'cba'
-const wordArray = word.split("")
-const reversedWordArray =  wordArray.reverse()
-const reversedWord = reversedWordArray.join("")
-
-return reversedWord
+  // making our code clean  and Readable 
+return word.split("").reverse().join("")
 }
 
 function isPalindrome(word) {
 
-  // return the input string 
+ 
  const reversedWord = reverse(word)
 
- if (word === reversedWord){
+ return word === reversedWord
 
-  return true
-
- }else{
-
-  return false
- }
 }
 
 
